@@ -1,200 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nataraj Sarma Duvvuri - Resume</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nataraj Sarma Duvvuri — Resume</title>
   <style>
-    .blink {
-      animation: blinker 1.5s linear infinite;
-      color: red;
-      font-family: sans-serif;
-    }
-    @keyframes blinker {
-      50% {
-        opacity: 0;
-      }
-    }
-    table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-    th, td {
-      padding: 5px;
-      text-align: left;
-    }
+    :root{--accent:#0b63d6;--muted:#6b7280;--paper:#f7f9fc}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.45;color:#0f1724;background:var(--paper);padding:24px}
+    .container{max-width:900px;margin:0 auto;background:#fff;border-radius:10px;box-shadow:0 8px 30px rgba(11,35,79,0.08);overflow:hidden}
+    header{display:flex;gap:20px;padding:28px;border-bottom:1px solid #eef2f7}
+    .avatar{width:96px;height:96px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7aa7ff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:28px}
+    .heading{flex:1}
+    h1{margin:0;font-size:20px}
+    .subtitle{color:var(--muted);margin-top:6px;font-size:14px}
+    .contact{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
+    .pill{background:#f1f5f9;padding:6px 10px;border-radius:999px;font-size:13px;color:#0f1724}
+
+    main{display:grid;grid-template-columns:1fr 320px;gap:24px;padding:28px}
+    .section{margin-bottom:18px}
+    h2{font-size:14px;margin:0 0 10px 0;color:var(--accent)}
+    p.lead{margin:0;color:#111827}
+    .two-col{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+
+    /* Experience list */
+    .job{padding:12px;border-radius:8px;border:1px solid #eef2f7;margin-bottom:12px;background:#fbfdff}
+    .job .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .job ul{margin:6px 0 0 18px}
+
+    /* Right column */
+    aside{background:linear-gradient(180deg,#ffffff,#fbfdff);padding:22px;border-left:1px dashed #eef2f7}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#eef5ff;padding:6px 8px;border-radius:6px;font-size:13px}
+
+    footer{padding:18px 28px;background:#fbfdff;border-top:1px solid #eef2f7;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Utilities */
+    .badge{display:inline-block;padding:6px 8px;background:#fff;border:1px solid #e6eefc;border-radius:6px;font-size:12px;color:#0b63d6}
+    .print-btn{border:0;padding:10px 12px;border-radius:8px;background:var(--accent);color:#fff;cursor:pointer}
+
+    @media (max-width:880px){main{grid-template-columns:1fr;padding:18px}aside{order:2}header{flex-direction:row;gap:12px}}
   </style>
 </head>
-<body style="background-color:white;">
+<body>
+  <div class="container" id="resume">
+    <header>
+      <div class="avatar">ND</div>
+      <div class="heading">
+        <h1>NATARAJ SARMA DUVVURI</h1>
+        <div class="subtitle">Assistant Vice President – ITSM Service Delivery Lead</div>
+        <div class="contact">
+          <div class="pill">+91-8019845588</div>
+          <div class="pill">natarajsarma427@gmail.com</div>
+          <div class="pill">DOB: 7-Jan-1984</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end">
+        <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+        <div class="badge">PMP • ITIL Foundation • ISTQB</div>
+      </div>
+    </header>
 
-  <h1><center><u>RESUME</u></center></h1>
-  <p>NATARAJ SARMA DUVVURI</p>
-  <p>&#128231; natarajsarma427@gmail.com</p>
-  <p>&#128241; +65-80317741</p>
-  <p>
-    <a href="https://www.linkedin.com/in/nataraj-duvvuri-3bab6566/" class="GFG">
-      <i class="fa fa-linkedin" style="font-size:20px;color:red"></i>
-    </a>
-  </p>
+    <main>
+      <section>
+        <div class="section">
+          <h2>Professional Summary</h2>
+          <p class="lead">Site reliability engineering & ITSM service delivery leader with 15+ years’ experience in production support, automation, and reliability engineering across financial services. Skilled in defining SLI’s, SLO’s, and SLA’s, driving observability and automation to reduce toil, leading incident response/post-mortems, and embedding reliability into software delivery pipelines.</p>
+        </div>
 
-  <marquee class="blink">This site has been created on GITHUB SERVER to demonstrate my skillset with diversified technologies.</marquee>
+        <div class="section">
+          <h2>Professional Experience</h2>
 
-  <h4><b><u>Objective:</u></b></h4>
-  <p>Proactive and result-oriented Team Manager with over 20 years of experience in IT Operations, Application Support, and Process Automation. Proven ability to lead cross-functional teams, manage service delivery, and implement operational excellence. Adept at stakeholder management, incident resolution, and driving continuous improvement initiatives. </p>
+          <div class="job">
+            <div class="meta"><strong>September 2022 - Present</strong> — Assistant Vice President – APSRE Delivery lead | Bank of America, Singapore (Domain: Retail Users)</div>
+            <ul>
+              <li>Defined and governed SLI’s, SLO’s, and SLA’s for critical financial platforms.</li>
+              <li>Led incident response and post-mortems to strengthen resilience.</li>
+              <li>Drove automation (Python / Bash / AutoSys / RPA) reducing manual effort by ~30%.</li>
+              <li>Embedded observability using Splunk, Dynatrace and proactive alerting.</li>
+              <li>Partnered on Azure cloud hosting solutions and directed DR / BCP drills.</li>
+            </ul>
+            <div style="margin-top:8px;color:var(--muted)"><strong>Achievements:</strong> Silver Award for SLA compliance; Bronze Award for automating VBA function in 2024.</div>
+          </div>
 
-  <!-- Replace with correct image path once uploaded to GitHub -->
-  <img align="right" src="Nataraj.JPG" alt="NATARAJ" width="250" height="200">
+          <div class="job">
+            <div class="meta"><strong>November 2018 – August 2022</strong> — Infra Lead | UBS AG, Singapore (Domain: Wealth Management)</div>
+            <ul>
+              <li>Led application infrastructure reliability for SMART Suite, improved availability and access control.</li>
+              <li>Orchestrated incident, change and problem management; migrated applications to Azure.</li>
+              <li>Provided Oracle DB, RHEL and big data (Hadoop/Kafka) support; automated workflows reducing manual intervention by 40%.</li>
+            </ul>
+            <div style="margin-top:8px;color:var(--muted)"><strong>Key Contributions:</strong> Established SLI/SLO frameworks; automated monitoring & operations.</div>
+          </div>
 
-  <h4><b><u>PROFESSIONAL SUMMARY</u></b></h4>
-  <table>
-    <tr><th>Organization</th><th>Role/Designation</th><th>Start Date</th><th>End Date</th></tr>
-    <tr><td>BANK OF AMERICA</td><td>Assistant Vice President/Global Production Support Service Lead</td><td>12-Sept-2022</td><td>Till date</td></tr>
-    <tr><td>UBS</td><td>Technical Support Analyst</td><td>1-Nov-2018</td><td>02-Sep-2022</td></tr>
-    <tr><td>Cognizant Technology Solutions</td><td>Technical Lead</td><td>1-Apr-2012</td><td>31-Oct-2018</td></tr>
-    <tr><td>Dell Perot Systems</td><td>Sr. Technical Associate Analyst</td><td>5-Jan-2009</td><td>31-Mar-2012</td></tr>
-    <tr><td>Sutherland Global Services</td><td>Sr. Technical Analyst</td><td>10-Oct-2005</td><td>3-Jan-2009</td></tr>
-  </table>
+          <div class="job">
+            <div class="meta"><strong>April 2012 – October 2018</strong> — Technical Lead | Cognizant Technology Solutions, Singapore (Domain: Research Client – UBS AG)</div>
+            <ul>
+              <li>Shift Lead for research support systems; led follow-the-sun handovers and major incident management.</li>
+              <li>Delivered automation (Bash) to reduce toil and improved operational efficiency.</li>
+            </ul>
+            <div style="margin-top:8px;color:var(--muted)"><strong>Achievement:</strong> Awarded ‘Difference Maker’ for a CRM bug fix in 2016.</div>
+          </div>
 
-  <h4><b><u>CERTIFICATIONS</u></b></h4>
-  <table>
-    <tr><th>Course</th><th>Issuing Authority</th></tr>
-    <tr><td>ITIL FOUNDATION CERTIFIED</td><td>EXIN</td></tr>
-    <tr><td>Oracle Solaris OCA certified</td><td>Oracle</td></tr>
-    <tr><td>Oracle 11g OCA Certified</td><td>Oracle</td></tr>
-    <tr><td>Splunk User certified</td><td>Splunk Certified</td></tr>
-    <tr><td>Azure Fundamentals</td><td>Microsoft Certified</td></tr>
-  </table>
+          <div class="job">
+            <div class="meta"><strong>January 2009 – March 2012</strong> — Sr Technical Associate Analyst | Dell Services, Singapore</div>
+            <ul>
+              <li>Production support for trading applications: Unix/Java app support, Oracle DB support, batch jobs and monitoring.</li>
+            </ul>
+          </div>
 
-<h4><u>GPS LEAD Responsibilities at BOFA</u></h4>
+          <div class="job">
+            <div class="meta"><strong>October 2005 – January 2009</strong> — Sr. Technical Analyst | Sutherland Global Services, Chennai, India</div>
+            <ul>
+              <li>Internal user support, hardware/software troubleshooting, AD user administration and server maintenance.</li>
+            </ul>
+            <div style="margin-top:8px;color:var(--muted)"><strong>Achievement:</strong> Best Associate resolution specialist (Dell) in 2007.</div>
+          </div>
 
-<ul>
-   <li>Overseeing and undertaking end-end project responsibilities</li>
-   <li>Reviewing Changes, Incidents and automation requests to align with organization standards</li>
-   <li>Monitor and control project risks, performing qualitative and quantitative risk assessments and establishing mitigation plans for critical production automation systems.</li>
-   <li>Drove continuous process improvement by leveraging lessons learned, retrospective analysis, and KPI reviews to optimize future project performance.</li>
-   <li>Liaise and coordinate with cross functional team to understand and leverage opportunities.</li>
-   <li>Handling conflicts and escalations deftly to mitigate or nullify stakeholder and project impact.</li>
-   <li>Ability to deal and liaise with individuals in a diplomatic way.</li>
-   <li>Balance workload during peak release cycles by reallocating resources across support and project streams without impacting SLA adherence.</li>
-   <li>Creating reports in visualization format and provide a forecast to senior leadership teams.</li> 
-</ul>
+        </div>
 
- <h4><u>Technical Competencies</u></h4>
+        <div class="section">
+          <h2>Achievements & Awards</h2>
+          <ul>
+            <li>BOFA Gold/Silver Award — Automated Thailand Foreign Exchange app (Python) — 2023.</li>
+            <li>Silver / Bronze Awards at BOFA — 2023/2024.</li>
+          </ul>
+        </div>
 
-<ul>
-   <li>Planning and testing of application, configuration and database changes, and installation of upgrades and patches and update production support documentation.</li>
-   <li>Troubleshoot incidents for web and desktop applications, DBs, Autosys batch jobs.</li>
-   <li>Automate routine tasks via VBA , shell/python scripting , RPA(Automation Anywhere) for productivity and efficiency.</li>
-   <li>Creating Tools as per requirement of the project using html , css and java script.</li>
-   <li>Monitor application performance and errors via tools like App Dynamics, Splunk and ISM NETCOOL and to achieve 100% SLAs and OLAs.</li>
-   <li>Plan and perform patching activities on prem and cloud-based applications to ensure all services are up on pre and post patching.</li>
-   <li>Disaster Recovery planning and implementation experience on support perspective.</li>
-   <li>Led end-to-end Business Continuity Planning (BCP) exercises, including scenario simulation, recovery testing, and post-mortem analysis to ensure minimal operational disruption and compliance with enterprise resilience standards.</li> 
-   <li>Recommend & Implement enhancements for improving availability, reliability & performance of inhouse applications.</li> 
-   <li>Work in an Agile – Scrum and Kanban models integrated with ITIL.</li> 
-   <li>Root Cause Analysis (RCA): Drive deep-dive investigations into major incidents.</li>
-   <li>Coordinate with development and engineering teams for code-level debugging and permanent fixes.</li>
-   <li>Approve and guide bug fixes, hotfixes, and infrastructure changes.</li>
-</ul> 
-  
-  <h4><u>SKILL SET</u></h4>
-  <ul>
-    <li>Webservers like Apache-Tomcat / IIS / NGINX</li>
-    <li>DNS</li>
-    <li>HTML/CSS/JavaScript</li>
-    <li>Knowledge of Red Hat Linux environment from an application support perspective</li>
-    <li>Scripting on Bash, Python</li>
-    <li>DB replication (Oracle Golden Gateway)</li>
-    <li>Git/GitHub (Version control)</li>
-    <li>Jenkins (Continuous Integration)</li>
-    <li>Docker and Kubernetes (K8S)</li>
-    <li>Supporting clients via GSNOW and Jira</li>
-    <li>Expertise following Excel VBA / Unix / Java / Python / PL-SQL logs</li>
-    <li>Adobe Marketing Campaign tool</li>
-    <li>Experience in application communication and messaging systems (EMS / Apache Kafka)</li>
-    <li>Manage and support Content Management Systems by Eidos Media</li>
-    <li>Manage releases and deployment via Puppet and in-house applications</li>
-    <li>Azure Administration on business applications</li>
-    <li>Perform SQL Queries / DML’s on Oracle / PostgreSQL / Sybase and strong understanding of PL/SQL procedures and objects like triggers, functions, packages, etc.</li>
-    <li>Good understanding of Big Data and Hadoop components like Yarn, Node Management, Sqoop, Spark, Hive, HQL</li>
-    <li>Sound knowledge on OSI model and hands-on Windows troubleshooting (software/hardware/network expertise)</li>
-    <li>Analyze data and errors via Splunk log analytics and troubleshoot production errors including management of Splunk user accounts (create, delete, modify, etc.)</li>
-    <li>Automation of alert generation for AutoSys / Oracle / Linux server failures via Splunk log analytics, mapped to Netcool using IP Automation tool</li>
-  </ul>
+      </section>
 
-   <h2>Certifications</h2>
-  <table border="1" cellpadding="8" cellspacing="0">
-    <thead>
-      <tr>
-        <th>Certification</th>
-        <th>Issuing Authority</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Project Management Professional</td>
-        <td>Project Management Institute</td>
-      </tr>
-      <tr>
-        <td>ITIL Certification - IT Service Management Foundation Certificate</td>
-        <td>Examination Institute for Information Science (EXIN)</td>
-      </tr>
-      <tr>
-        <td>ISTQB – International Standard Testing Qualification Board (Software Testing Foundation - Manual)</td>
-        <td>ISEB</td>
-      </tr>
-      <tr>
-        <td>Oracle 11g OCA Certified</td>
-        <td>Oracle</td>
-      </tr>
-      <tr>
-        <td>Oracle Solaris OCA Certified</td>
-        <td>Oracle</td>
-      </tr>
-      <tr>
-        <td>Splunk User Certified</td>
-        <td>Splunk</td>
-      </tr>
-      <tr>
-        <td>Azure</td>
-        <td>Microsoft</td>
-      </tr>
-    </tbody>
-  </table>
+      <aside>
+        <div class="section">
+          <h2>Contact</h2>
+          <div style="font-size:14px;color:#0f1724">
+            +91-8019845588<br>
+            natarajsarma427@gmail.com
+          </div>
+        </div>
 
-   <h2>Scholastics</h2>
-  <table border="1" cellpadding="8" cellspacing="0">
-    <thead>
-      <tr>
-        <th>Course</th>
-        <th>University / Board</th>
-        <th>Passing Year</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>M.Tech</td>
-        <td>BITS, Pilani, Hyderabad, India</td>
-        <td>2023</td>
-      </tr>
-      <tr>
-        <td>B.Tech</td>
-        <td>JNTU, Hyderabad, India</td>
-        <td>2005</td>
-      </tr>
-      <tr>
-        <td>Intermediate</td>
-        <td>Board of Intermediate Education, A.P. India</td>
-        <td>2001</td>
-      </tr>
-      <tr>
-        <td>10th Class</td>
-        <td>Secondary School of Board, A.P. India</td>
-        <td>1999</td>
-      </tr>
-    </tbody>
-  </table>
-  
+        <div class="section">
+          <h2>Scholastics</h2>
+          <div class="two-col">
+            <div>
+              <strong>M. Tech, Software Engineering</strong><br>BITS Pilani — 2021-2023
+            </div>
+            <div>
+              <strong>B. Tech, Electrical & Electronics Engg</strong><br>JNTU Hyderabad — 2001-2005
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Technical Experience</h2>
+          <div class="skill-list">
+            <div class="skill">Docker</div>
+            <div class="skill">Jenkins</div>
+            <div class="skill">Kubernetes</div>
+            <div class="skill">Ansible</div>
+            <div class="skill">Git / GitHub</div>
+            <div class="skill">ServiceNow</div>
+            <div class="skill">JIRA</div>
+            <div class="skill">HTML/CSS/JS</div>
+            <div class="skill">Python / Bash</div>
+            <div class="skill">Oracle / Sybase</div>
+            <div class="skill">Splunk / Dynatrace</div>
+            <div class="skill">AutoSys / RPA</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Managerial Experience</h2>
+          <ul>
+            <li>SRE Governance</li>
+            <li>ITIL lifecycle management</li>
+            <li>Project & stakeholder management</li>
+            <li>Presales & implementations</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Certifications</h2>
+          <div>• PMP<br>• ITIL Foundation<br>• ISTQB<br>• Oracle 11g OCA<br>• Oracle Solaris OCA<br>• Splunk user certified<br>• Azure fundamentals</div>
+        </div>
+
+        <div class="section">
+          <h2>Personal Details</h2>
+          <div>
+            Marital Status: Married<br>
+            Languages: English, Telugu, Hindi, Tamil
+          </div>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>Resume generated for web viewing • Designed to closely match the provided document</footer>
+  </div>
+
+  <script>
+    // small enhancement: allow pressing 'd' to download HTML content
+    document.addEventListener('keydown', (e)=>{
+      if(e.key==='d' && (e.ctrlKey||e.metaKey)){
+        e.preventDefault();
+        const blob = new Blob([document.documentElement.outerHTML],{type:'text/html'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url; a.download='Nataraj_Duvvuri_Resume_Web.html'; document.body.appendChild(a); a.click(); a.remove();
+        URL.revokeObjectURL(url);
+      }
+    });
+  </script>
 </body>
 </html>
